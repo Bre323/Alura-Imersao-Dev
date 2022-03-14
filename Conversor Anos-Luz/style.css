@@ -43,10 +43,6 @@ html, body {
     right: 10px;
   }
   
-  label {
-    color: white;
-  }
-  
   .planeta {
     margin-top: 20px;
   }
@@ -74,10 +70,12 @@ html, body {
   
   .planeta-img {
     margin: 35px 0px;
-    width: 150px;
+    width: 250px;
+    border-radius: 35px;
   }
 
   h2 {
+    margin: 10px 0px 25px 0px;
     color: #ffffff;
     font-size: 30px;
   }

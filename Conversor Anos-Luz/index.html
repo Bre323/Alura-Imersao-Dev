@@ -15,23 +15,25 @@
       <h1 class="page-title">
         Distancia Anos-Luz
       </h1>
-      <p class="page-subtitle">Descubra a distancia da Terra para os outros planetas</p>
+      <p class="page-subtitle">Descubra a distancia dos planetas para o sol</p>
       
       <div class="planeta">
-        <select>
+        <select id="valor">
           <option>Mercúrio</option>
           <option>Vênus</option>
+          <option>Terra</option>
           <option>Marte</option>
           <option>Júpiter</option>
           <option>Saturno</option>
           <option>Urano</option>
           <option>Netuno</option>
         </select>
-        <button>Selecionar</button>
+        <button type="submit" onclick="exibirDistancia()">Selecionar</button>
       </div>
       
-      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="planeta-img" alt=""><br><br>
-      <h2 id="valorConvertido"></h2>
+      <img src="" id="imagemPlaneta" class="planeta-img" alt=""><br><br>
+      <h2 id="distanciaAnosLuz"></h2>
+      <h2 id="distanciaKM"></h2>
     </div>
 
     <a href="https://alura.com.br/" target="_blank">
