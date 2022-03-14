@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    height: 100%;
+    background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 50px 100px;
+    padding: 20px;
+    height: 35vh;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  
+  .page-logo {
+    width: 150px;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  label {
+    color: white;
+  }
+  
+  .planeta {
+    margin-top: 20px;
+  }
+
+  select {
+    padding: 3px 8px;
+  }
+
+  button {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border: none;
+    background: #ffffff;
+    transition-duration: 0.4s;
+  }
+  
+  button:hover {
+    background-color: #18d8e6;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+    background-color: #0f919b;
+  }
+  
+  .planeta-img {
+    margin: 35px 0px;
+    width: 150px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-size: 30px;
+  }
