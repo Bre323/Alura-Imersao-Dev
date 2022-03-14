@@ -17,7 +17,7 @@ html, body {
   .container {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    margin: 40px 350px;
+    margin: 40px 180px;
     padding: 20px;
     height: 75vh;
     border-radius: 35px;
@@ -69,12 +69,12 @@ html, body {
   }
 
   .unidade1 select, .unidade2 select {
-    color: white;
     margin-top: 10px;
   }
 
   button {
     margin-top: 12px;
+    margin-bottom: 25px;
     padding: 4px 8px;
     border: none;
     border-radius: 10px;
