@@ -1,6 +1,13 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
     font-family: "Roboto Mono", monospace;
     min-height: 400px;
+    height: 100%;
     background-image: url("https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?cs=srgb&dl=pexels-david-mcbee-730547.jpg&fm=jpg");
     background-size: cover;
     background-position: center bottom;
@@ -76,4 +83,3 @@ body {
     color: #ffffff;
     font-size: 30px;
   }
-  
