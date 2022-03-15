@@ -20,7 +20,7 @@ body {
     margin: 0 0 5px;
   }
   
-  .page-subtitle {
+  .page-subtitle, .tentativas {
     color: #ffffff;
     margin-top: 16px;
   }
