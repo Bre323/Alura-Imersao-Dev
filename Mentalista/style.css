@@ -1,8 +1,9 @@
 body {
     font-family: "Roboto Mono", monospace;
     min-height: 600px;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png");
-    background-color: #000000;
+    background: linear-gradient(217deg, rgb(0, 0, 0), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(55, 0, 255, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgb(181, 15, 187), rgba(0,0,255,0) 70.71%);;
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -50,6 +51,14 @@ body {
     background: #ffffff;
   }
   
+  button:hover {
+    background: #6baefa;
+  }
+
+  button:active {
+    background: #3e6591;
+  }
+
   .resultado {
     color: #ffffff;
     text-align: center;
