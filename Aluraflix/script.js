@@ -3,7 +3,7 @@ let listaDeTitulos = [];
 
 function adicionarFilme() {
     let filme = document.getElementById("filme").value;
-    if(filme.endsWith(".jpg") || filme.endsWith(".png")) {
+    if(filme.endsWith(".jpg")) {
         listarFilmes(filme);
     }
     else {
@@ -14,9 +14,10 @@ function adicionarFilme() {
 
 function listarFilmes(filme) {
     let elementoFilme = "<img src="+ filme +">";
-    let elementolistaFilmes = document.getElementById("imagemsDeFilmes");
+    let elementoImagemDeFilmes = document.getElementById("imagemsDeFilmes");
     listaDeImagens.push(elementoFilme);
-    elementolistaFilmes.innerHTML += listaDeImagens[listaDeImagens.length - 1];
+    elementoImagemDeFilmes.innerHTML += listaDeImagens[listaDeImagens.length - 1];
+    console.log(listaDeImagens);
 }
 
 function removerFilme() {

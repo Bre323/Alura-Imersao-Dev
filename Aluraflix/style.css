@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto Mono", monospace;
     text-align: center;
-    background-image: url("https://images.mubicdn.net/images/film/113049/cache-89429-1623408443/image-w1280.jpg");
+    background-image: url("https://ak.picdn.net/shutterstock/videos/9984677/thumb/1.jpg");
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -20,11 +20,11 @@ body {
 
 .page-subtitle {
     color: #ffffff;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .page-logo {
-    width: 200px;
+    width: 175px;
 }
 
 .alura-logo {
@@ -34,19 +34,13 @@ body {
     left: 10px;
 }
 
-#imagemsDeFilmes img {
-    margin: 10px;
-    max-height: 250px;
-}
-
 .form-wrapper {
     margin: 0 0 15px;
 }
 
 .form-wrapper input {
-    display: block;
     margin: 0 auto;
-    padding: 10px 15px;
+    padding: 5px 15px;
 }
 
 .form-wrapper button {
@@ -54,10 +48,7 @@ body {
     color: #ffffff;
     background: #da1e26;
     font-weight: bold;
-    padding: 15px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    margin-top: 20px;
+    padding: 7px 15px;
     cursor: pointer;
     transition: 0.3s;
 }
