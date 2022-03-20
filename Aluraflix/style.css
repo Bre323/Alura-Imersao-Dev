@@ -34,6 +34,34 @@ body {
     left: 10px;
 }
 
+#filmesAdicionados {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 210px);
+}
+
+.divFilme {
+    margin: 10px 5px;
+    background-color: rgba(247, 247, 247, 0.2);
+    border-radius: 20px;
+    max-width: 210px;
+    transition: 0.3s;
+}
+
+.divFilme:hover {
+    transform: scale(0.95);
+}
+
+.divFilme img {
+    margin: 5px 10px;
+    max-height: 220px;  
+}
+
+.divFilme h2 {
+    color: #ffffff;
+    margin-top: 5px;
+}
+
 .form-wrapper {
     margin: 0 0 15px;
 }

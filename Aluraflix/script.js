@@ -1,29 +1,33 @@
-let listaDeImagens = [];
-let listaDeTitulos = [];
+let listaDeFilmes = [];
 
 function adicionarFilme() {
-    let filme = document.getElementById("filme").value;
-    if(filme.endsWith(".jpg")) {
-        listarFilmes(filme);
+    let filme = document.getElementById("filme").value
+    let titulo = document.getElementById("nomeFilme").value
+
+    if(filme == "" || titulo == "") {
+        alert("Preencha os campos para inserir um filme");
     }
     else {
-        console.error("Endereço de filme inválido");
+        if(filme.endsWith(".jpg")) {
+            listarFilmes(filme, titulo);
+        }
+        else {
+            alert("Endereço de filme inválido");
+        }
     }
+
     document.getElementById("filme").value = "";
+    document.getElementById("nomeFilme").value = "";
 }
 
-function listarFilmes(filme) {
+
+function listarFilmes(filme, titulo) {
+    let elementoFilmesAdicionados = document.getElementById("filmesAdicionados");
     let elementoFilme = "<img src="+ filme +">";
-    let elementoImagemDeFilmes = document.getElementById("imagemsDeFilmes");
-    listaDeImagens.push(elementoFilme);
-    elementoImagemDeFilmes.innerHTML += listaDeImagens[listaDeImagens.length - 1];
-    console.log(listaDeImagens);
-}
+    let elementoTitulo = "<h2>"+ titulo +"</h2>";
 
-function removerFilme() {
-    listaDeImagens.pop();
-    elementolistaFilmes.innerHTML = "";
-    for(let x in listaDeImagens) {
-        elementolistaFilmes.innerHTML += listaDeImagens[x];
-    }
+    listaDeFilmes.push({Imagem: elementoFilme, Titulo: titulo});
+    elementoFilmesAdicionados.innerHTML += "<div class='divFilme'>"+ elementoFilme + elementoTitulo +"</div>";
+
+    console.log(listaDeFilmes);
 }
