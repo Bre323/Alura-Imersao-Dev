@@ -9,42 +9,49 @@
     <title>Classificação</title>
 </head>
 <body>
-    <h1>Tabela de classificação</h1>
+    <h1 class="page-title">Tabela de classificação</h1>
+    
+    <div class="botoes">
+        <button onClick="novoJogador()">Adicionar Jogador</button>
+        <button onClick="zerarPontos()">Zerar Pontos</button>
+    </div>
 
-    <table style="width:100%">
-        <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Vitórias</th>
-            <th>Empates</th>
-            <th>Derrotas</th>
-            <th>Pontos</th>
-            <th colspan="3">Ações</th>
-        </tr>
-        </thead>
+    <div class="container">
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Vitórias</th>
+                    <th>Empates</th>
+                    <th>Derrotas</th>
+                    <th>Pontos</th>
+                    <th colspan="3">Ações</th>
+                </tr>
+            </thead>
 
-        <tbody id="tabelaJogadores">
-        <tr>
-            <td>Breno</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button onClick="adicionarVitoria()">Vitória</button></td>
-            <td><button onClick="adicionarEmpate()">Empate</button></td>
-            <td><button onClick="adicionarDerrota()">Derrota</button></td>
-        </tr>
-        <tr>
-            <td>Fulaninho</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button onClick="adicionarVitoria()">Vitória</button></td>
-            <td><button onClick="adicionarEmpate()">Empate</button></td>
-            <td><button onClick="adicionarDerrota()">Derrota</button></td>
-        </tr>
-        </tbody>
-    </table>
+            <tbody id="tabelaJogadores">
+                <!--<tr>
+                    <td>Breno</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                    <td><button onClick="adicionarEmpate()">Empate</button></td>
+                    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+                </tr>
+                <tr>
+                    <td>Fulaninho</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><button onClick="adicionarVitoria()">Vitória</button></td>
+                    <td><button onClick="adicionarEmpate()">Empate</button></td>
+                    <td><button onClick="adicionarDerrota()">Derrota</button></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
