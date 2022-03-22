@@ -1,63 +1,76 @@
-let jogadorObj = {nome: "Breno", vitorias: 0, empates: 0, derrotas: 0, pontos: 0};
+let listaJogadores = [];
 
-//BOTÕES FORA DA TABELA
-function novoJogador() {
+
+//DADOS E PONTOS DOS JOGADORES
+function exibirDadosJogadores(listaJogadores) {
     let tabelaJogadores = document.getElementById("tabelaJogadores");
-    let jogador = `<tr>
-    <td>Breno</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td><button onClick="adicionarVitoria()">Vitória</button></td>
-    <td><button onClick="adicionarEmpate()">Empate</button></td>
-    <td><button onClick="adicionarDerrota()">Derrota</button></td>
-</tr>`;
-    
-    tabelaJogadores.innerHTML += jogador;
-    console.log(jogadorObj);
+    let jogadores = "";
+
+    for(let i in listaJogadores) {
+        jogadores += `<tr>
+        <td>${listaJogadores[i].nome}</td>
+        <td>${listaJogadores[i].vitorias}</td>
+        <td>${listaJogadores[i].empates}</td>
+        <td>${listaJogadores[i].derrotas}</td>
+        <td>${listaJogadores[i].pontos}</td>
+        <td><button onClick="adicionarVitoria(${i})">Vitória</button></td>
+        <td><button onClick="adicionarEmpate(${i})">Empate</button></td>
+        <td><button onClick="adicionarDerrota(${i})">Derrota</button></td>
+        </tr>`;
+    }
+
+    tabelaJogadores.innerHTML = jogadores;
+}
+
+function calcularPontos(jogador) {
+    let totalPontos = (jogador.vitorias * 3) + jogador.empates;
+    jogador.pontos = totalPontos;
 }
 
 
+//BOTÕES FORA DA TABELA
+function novoJogador() {
+    let jogadorObj = {nome: "", vitorias: 0, empates: 0, derrotas: 0, pontos: 0};
+    jogadorObj.nome = prompt("Digite o nome do jogador: ");    
+    listaJogadores.push(jogadorObj);
+
+    console.log(listaJogadores);
+    exibirDadosJogadores(listaJogadores);
+}
+
 function zerarPontos() {
-    jogadorObj.vitorias = 0;
-    jogadorObj.empates = 0;
-    jogadorObj.derrotas = 0;
-    jogadorObj.pontos = 0;
-    console.log(jogadorObj);
+    for(let i in listaJogadores) {
+        listaJogadores[i].vitorias = 0;
+        listaJogadores[i].empates = 0;
+        listaJogadores[i].derrotas = 0;
+        calcularPontos(listaJogadores[i]);
+    }
+
+    exibirDadosJogadores(listaJogadores);
 }
 
 
 //BOTÕES DENTRO DA TABELA
-function adicionarVitoria() {
-    jogadorObj.vitorias += 1;
-    console.log(jogadorObj.vitorias);
+function adicionarVitoria(i) {
+    let jogador = listaJogadores[i];
+    jogador.vitorias++;
 
-    calcularPontos();
+    calcularPontos(listaJogadores[i]);
+    exibirDadosJogadores(listaJogadores);
 }
 
-function adicionarEmpate() {
-    jogadorObj.empates += 1;
-    console.log(jogadorObj.empates);
+function adicionarEmpate(i) {
+    let jogador = listaJogadores[i];
+    jogador.empates++;
 
-    calcularPontos();
+    calcularPontos(listaJogadores[i]);
+    exibirDadosJogadores(listaJogadores);
 }
 
-function adicionarDerrota() {
-    jogadorObj.derrotas += 1;
-    console.log(jogadorObj.derrotas);
+function adicionarDerrota(i) {
+    let jogador = listaJogadores[i];
+    jogador.derrotas++;
 
-    calcularPontos();
-}
-
-
-//PONTOS E DADOS DO JOGADORES
-function calcularPontos() {
-    let totalPontos = (jogadorObj.vitorias * 3) + jogadorObj.empates;
-    jogadorObj.pontos = totalPontos;
-    console.log(totalPontos);
-}
-
-function exibirDadosJogadores() {
-    calcularPontos();    
+    calcularPontos(listaJogadores[i]);
+    exibirDadosJogadores(listaJogadores);
 }
