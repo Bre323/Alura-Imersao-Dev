@@ -1,7 +1,7 @@
 let listaJogadores = [];
 
 
-//DADOS E PONTOS DOS JOGADORES
+//DADOS, PONTOS E ORDEM DOS JOGADORES
 function exibirDadosJogadores(listaJogadores) {
     let tabelaJogadores = document.getElementById("tabelaJogadores");
     let jogadores = "";
@@ -26,6 +26,19 @@ function calcularPontos(jogador) {
     let totalPontos = (jogador.vitorias * 3) + jogador.empates;
     jogador.pontos = totalPontos;
 }
+
+function ordemClassificacao() {
+    listaJogadores.sort(function (a, b) {
+      if (a.pontos < b.pontos) {
+        return 1;
+      } else if (a.pontos == b.pontos) {
+        return 0;
+      } else {
+        return -1;
+      }
+    });
+    exibirDadosJogadores(listaJogadores);
+  }
 
 
 //BOTÕES FORA DA TABELA
@@ -56,7 +69,7 @@ function adicionarVitoria(i) {
     jogador.vitorias++;
 
     calcularPontos(listaJogadores[i]);
-    exibirDadosJogadores(listaJogadores);
+    ordemClassificacao();
 }
 
 function adicionarEmpate(i) {
@@ -64,7 +77,7 @@ function adicionarEmpate(i) {
     jogador.empates++;
 
     calcularPontos(listaJogadores[i]);
-    exibirDadosJogadores(listaJogadores);
+    ordemClassificacao();
 }
 
 function adicionarDerrota(i) {
@@ -72,5 +85,5 @@ function adicionarDerrota(i) {
     jogador.derrotas++;
 
     calcularPontos(listaJogadores[i]);
-    exibirDadosJogadores(listaJogadores);
+    ordemClassificacao();
 }
