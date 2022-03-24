@@ -425,6 +425,7 @@ let carta40 = {
     }
   };
 
+  
 let cartaMaquina;
 let cartaJogador;
 let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10,
@@ -432,8 +433,6 @@ let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, ca
               carta21, carta22, carta23, carta24, carta25, carta26, carta27, carta28, carta29, carta30,
               carta31, carta32, carta33, carta34, carta35, carta36, carta37, carta38, carta39, carta40];
         
-
-
 
 function sortearCarta() {
   var numeroCartaMaquina = parseInt(Math.random() * 40);
@@ -452,6 +451,8 @@ function sortearCarta() {
 }
 
 
+
+/*
 function obtemAtributoSelecionado() {
   var radioAtributo = document.getElementsByName("atributo");
   for (var i = 0; i < radioAtributo.length; i++) {
@@ -529,3 +530,4 @@ function exibirCartaMaquina() {
   
   divCartaMaquina.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
 }
+*/

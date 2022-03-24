@@ -1,9 +1,7 @@
 body {
-    font-family: 'Roboto Mono', monospace;
-    min-height: 854px;
-    background-color: #000000;
-    background-size: cover;
-    background-position: center top;
+    font-family: 'Georgia', serif;
+    min-height: 860px;
+    background: linear-gradient(0.5turn, #194457, #76806f, #91581b);
     background-repeat: no-repeat;
     padding-bottom: 20vh;
 }
@@ -18,111 +16,64 @@ body {
     margin: 5px 0;
 }
 
-button, .button-jogar {
-    padding: .8rem 1.5rem;
+button {
+    background: #76806f;
+    padding: 0.8rem 1.5rem;
     margin: 1rem 0;
-    border-radius: 5px;
     border: none;
+    border-radius: 15px;
     font-size: 1rem;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 button:hover {
     transform: scale(0.95);
-    background: #ffffffe0;
+    background: #76806fe0;
 }
 
 button:active {
-    background: #ffffff6e;
+    background: #76806f6e;
 }
 
 h2 {
-    color: white;
+    color: #ffffff;
 }
 
 #carta-jogador, #carta-maquina {
-    width: 360px;
+    width: 350px;
     height: 500px;
-    overflow: auto;
     border-radius: 10px;
     margin-bottom: 20px;
     margin: 0 auto;
+    overflow: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     background-size: 350px 300px;
     background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 10px;
-    border-radius: 33px;
+    background-position: 5px;
+    border-radius: 30px;
 }
 
 #carta-jogador h3 {
     text-align: center;
 }
 
-.carta-imagem {
-    border: 1px solid black;
-    height: 100px;
-    margin: 10px;
+#carta-jogador img, #carta-maquina img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
 }
 
-.carta-imagem img {
-    width: 100%;
-    height: 100%;
-}
-
-.carta-status {
-    height: 160px;
-    margin: 2rem;
-    color: white;
-    z-index: 2;
-}
-
-.carta-status input {
-    margin: 20px 10px;
-}
-
-.resultado-final {
-    color: white;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding: 1rem;
-    border: 2px solid black;
-    background-color: black;
-}
-
-.--spacing {
-    margin-left: 2.5rem;
-}
-
-form {
+form  {
     display: flex;
     flex-direction: column;
 }
 
 .wrapper {
+    padding: 20px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 
-.carta-subtitle {
-    z-index: 2;
-    position: absolute;
-    top: 16px;
-    left: 37px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-#cartas {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.carta-status p {
-    margin-bottom: 2rem;
-}
