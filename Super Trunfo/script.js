@@ -446,7 +446,7 @@ function sortearCarta() {
   cartaJogador = cartas[numeroCartaJogador];
   console.log(cartaJogador);
   
-  document.getElementById("btnSortear").disabled = true;
+  //document.getElementById("btnSortear").disabled = true;
   document.getElementById("btnJogar").disabled = false;
   exibirCartaJogador();
 }
@@ -478,6 +478,7 @@ function jogar() {
   divResultado.innerHTML = htmlResultado;
   
   document.getElementById("btnJogar").disabled = true;
+  document.getElementById("btnSortear").disabled = false;
   exibirCartaMaquina();
 }
   
