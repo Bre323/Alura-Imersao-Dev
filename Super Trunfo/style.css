@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto Mono', monospace;
     min-height: 854px;
-    background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png');
     background-color: #000000;
     background-size: cover;
     background-position: center top;
@@ -25,6 +24,16 @@ button, .button-jogar {
     border-radius: 5px;
     border: none;
     font-size: 1rem;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(0.95);
+    background: #ffffffe0;
+}
+
+button:active {
+    background: #ffffff6e;
 }
 
 h2 {
