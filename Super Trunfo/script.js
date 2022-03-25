@@ -1,7 +1,8 @@
+//MONTAGEM DO DECK DE SUPER TRUNFO (40 CARTAS)
 let carta1 = {
     nome: "Ezio Auditore",
-    imagem:
-      "http://pm1.narvii.com/6279/2f45fe73481891665b88c29d7a18a730bb5d6954_00.jpg",
+    imagem: 
+      "https://img-9gag-fun.9cache.com/photo/aXoRQo2_460s.jpg",
     atributos: {
       ataque: 7,
       defesa: 7,
@@ -11,7 +12,8 @@ let carta1 = {
   
 let carta2 = {
     nome: "Roronoa Zoro",
-    imagem: "https://c4.wallpaperflare.com/wallpaper/332/915/762/one-piece-roronoa-zoro-hd-wallpaper-preview.jpg",
+    imagem: 
+      "https://c4.wallpaperflare.com/wallpaper/332/915/762/one-piece-roronoa-zoro-hd-wallpaper-preview.jpg",
     atributos: {
       ataque: 8,
       defesa: 6,
@@ -21,8 +23,8 @@ let carta2 = {
   
 let carta3 = {
     nome: "Ikki de Fenix",
-    imagem:
-      "https://i.pinimg.com/originals/87/38/7f/87387f75d5af53e094124100a5bd19d0.jpg",
+    imagem: 
+      "https://pm1.narvii.com/6341/cf494155e63285aba890b440c19b37664b396d6d_hq.jpg",
     atributos: {
       ataque: 8,
       defesa: 7,
@@ -43,7 +45,8 @@ let carta4 = {
   
 let carta5 = {
     nome: "Batman",
-    imagem: "https://conteudo.imguol.com.br/c/entretenimento/04/2022/02/25/batman-1645790799911_v2_1x1.jpg",
+    imagem: 
+      "https://conteudo.imguol.com.br/c/entretenimento/04/2022/02/25/batman-1645790799911_v2_1x1.jpg",
     atributos: {
       ataque: 6,
       defesa: 7,
@@ -75,7 +78,8 @@ let carta7 = {
   
 let carta8 = {
     nome: "Kyo Kusanagi",
-    imagem: "http://pm1.narvii.com/6724/41e7fe25be4a0c26a052b6557c40b17909802fa1v2_00.jpg",
+    imagem: 
+      "http://pm1.narvii.com/6724/41e7fe25be4a0c26a052b6557c40b17909802fa1v2_00.jpg",
     atributos: {
       ataque: 7,
       defesa: 6,
@@ -107,7 +111,8 @@ let carta10 = {
   
 let carta11 = {
     nome: "Jill Valentine",
-    imagem: "https://spoiler.nerdaocubo.com.br/wp-content/uploads/2020/10/EeGwHUFU0AAb7nm-1-1-819x1024.jpg",
+    imagem: 
+      "https://spoiler.nerdaocubo.com.br/wp-content/uploads/2020/10/EeGwHUFU0AAb7nm-1-1-819x1024.jpg",
     atributos: {
       ataque: 7,
       defesa: 8,
@@ -139,7 +144,8 @@ let carta13 = {
   
 let carta14 = {
     nome: "Dio Brando",
-    imagem: "http://pm1.narvii.com/7834/d0f49e2341e5d1d9d01036ca1c6068cb853ffa49r1-454-500v2_uhq.jpg",
+    imagem: 
+      "http://pm1.narvii.com/7834/d0f49e2341e5d1d9d01036ca1c6068cb853ffa49r1-454-500v2_uhq.jpg",
     atributos: {
       ataque: 9,
       defesa: 6,
@@ -171,7 +177,8 @@ let carta16 = {
   
 let carta17 = {
     nome: "Goku",
-    imagem: "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/dragon-ball-super-1200x900-1.jpg",
+    imagem: 
+      "https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/dragon-ball-super-1200x900-1.jpg",
     atributos: {
       ataque: 9,
       defesa: 7,
@@ -214,7 +221,7 @@ let carta20 = {
 let carta21 = {
     nome: "Homem de Ferro",
     imagem:
-      "https://i.pinimg.com/originals/a7/f7/3a/a7f73ace67a9a9dd673e49ba913079f0.jpg",
+      "https://revolutionnow.com.br/wp-content/uploads/2019/06/Homem-de-Ferro-1.png",
     atributos: {
       ataque: 7,
       defesa: 7,
@@ -257,7 +264,7 @@ let carta24 = {
 let carta25 = {
     nome: "Super Choque",
     imagem:
-      "https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2020/08/23/staticshockvol11textless.jpg",
+      "https://sm.ign.com/ign_br/screenshot/default/super-shock-hq_479b.jpg",
     atributos: {
       ataque: 5,
       defesa: 8,
@@ -267,7 +274,7 @@ let carta25 = {
   
 let carta26 = {
     nome: "Lanterna Verde",
-    imagem: "https://3.bp.blogspot.com/-Ub5ybOo5Oys/TX6o1S69lSI/AAAAAAAAGbE/lRzBCHBneco/s1600/kylejstwerart%25281%2529.jpg",
+    imagem: "https://1.bp.blogspot.com/-xKTPBO0sc5U/XJ-6CJ6E4bI/AAAAAAAAEbY/FGQSZFtszesteJv42paK9NBr4ar1qVTbQCLcBGAs/s1600/images%2B%25288%2529.jpeg",
     atributos: {
       ataque: 5,
       defesa: 6,
@@ -278,7 +285,7 @@ let carta26 = {
 let carta27 = {
     nome: "Samus",
     imagem:
-      "https://observatoriodegames.uol.com.br/wp-content/uploads/2022/01/Metroid.jpg",
+      "https://muropaketti.com/wp-content/uploads/2017/10/metroid_samusreturns_arv_0nosto.jpg",
     atributos: {
       ataque: 7,
       defesa: 8,
@@ -385,7 +392,7 @@ let carta36 = {
 let carta37 = {
     nome: "Lara Croft",
     imagem:
-      "https://laracroft.com.br/assets/uploads/2020/03/lara_croft_artwork-526x1024.jpg",
+      "https://t.ctcdn.com.br/WBnAir8k_O3GZpmJGlsyhS0R4zk=/400x400/smart/i490784.jpeg",
     atributos: {
       ataque: 5,
       defesa: 6,
@@ -406,7 +413,7 @@ let carta38 = {
 let carta39 = {
     nome: "Bayonetta",
     imagem:
-      "https://www.comboinfinito.com.br/principal/wp-content/uploads/2018/02/1.jpg",
+      "https://tm.ibxk.com.br/2021/06/18/18164507000281.jpg",
     atributos: {
       ataque: 8,
       defesa: 5,
@@ -426,6 +433,8 @@ let carta40 = {
   };
 
 
+
+//VARIÁVEIS INICIAIS  
 let cartaMaquina;
 let cartaJogador;
 let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10,
@@ -434,6 +443,7 @@ let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, ca
               carta31, carta32, carta33, carta34, carta35, carta36, carta37, carta38, carta39, carta40];
         
 
+//FUNÇÕES DOS BOTÕES
 function sortearCarta() {
   let numeroCartaMaquina = parseInt(Math.random() * 40);
   let numeroCartaJogador = parseInt(Math.random() * 40);
@@ -446,25 +456,8 @@ function sortearCarta() {
   cartaJogador = cartas[numeroCartaJogador];
   document.getElementById("btnSortear").disabled = true;
   document.getElementById("btnJogar").disabled = false;
+
   exibirCartaJogador();
-}
-
-
-function exibirCartaJogador() {
-  let divCartaJogador = document.getElementById("carta-jogador");
-  divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-  let nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
-  let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">';
-  let opcoesDiv = "<div id='opcoes' class='carta-status'>";
-  let opcoesTexto = "";
-
-  for (let atributo in cartaJogador.atributos) {
-    opcoesTexto += 
-      "<input type='radio' name='atributo' value='" + atributo + "'>"
-      + atributo + " " + cartaJogador.atributos[atributo] + "<br>";
-  }
-
-  divCartaJogador.innerHTML = moldura + nome + opcoesDiv +  opcoesTexto + "</div>";
 }
 
 
@@ -494,24 +487,45 @@ function jogar() {
   }
   divResultado.innerHTML = htmlResultado;
 
-  document.getElementById("btnSortear").disabled = false;
   document.getElementById("btnJogar").disabled = true;
   exibirCartaMaquina();
+}
+
+
+//FUNÇÕES DE EXIBIR AS CARTAS
+function exibirCartaJogador() {
+  let divCartaJogador = document.getElementById("carta-jogador");
+  divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
+  divCartaJogador.style.backgroundSize = `330px 270px`;
+  divCartaJogador.style.backgroundPosition = `20px 50px`;
+  let nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
+  let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">';
+  let opcoesDiv = "<div id='opcoes' class='carta-status'>";
+  let opcoesTexto = "";
+
+  for (let atributo in cartaJogador.atributos) {
+    opcoesTexto += 
+      "<input type='radio' name='atributo' value='" + atributo + "'>"
+      + atributo + " " + cartaJogador.atributos[atributo] + "<br>";
+  }
+
+  divCartaJogador.innerHTML = moldura + nome + opcoesDiv +  opcoesTexto + "</div>";
 }
 
 
 function exibirCartaMaquina() {
   let divCartaMaquina = document.getElementById("carta-maquina");
   divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
-  let nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`
+  divCartaMaquina.style.backgroundSize = `330px 270px`;
+  divCartaMaquina.style.backgroundPosition = `20px 50px`;
+  let nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
   let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">';
   let opcoesDiv = "<div id='opcoes' class='carta-status'>";
   let opcoesTexto = "";
 
   for (let atributo in cartaMaquina.atributos) {
     opcoesTexto += 
-      "<input type='radio' name='atributo' value='" + atributo + "'>"
-      + atributo + " " + cartaJogador.atributos[atributo] + "<br>";
+      "<p>" + atributo + " " + cartaMaquina.atributos[atributo] + "<br>";
   }
 
   divCartaMaquina.innerHTML = moldura + nome + opcoesDiv + opcoesTexto + "</div>";
