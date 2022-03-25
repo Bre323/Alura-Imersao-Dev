@@ -525,7 +525,7 @@ function exibirCartaMaquina() {
 
   for (let atributo in cartaMaquina.atributos) {
     opcoesTexto += 
-      "<p>" + atributo + " " + cartaMaquina.atributos[atributo] + "<br>";
+      "<p class='cartaMaquina-atributo'>" + atributo + " " + cartaMaquina.atributos[atributo] + "<br>";
   }
 
   divCartaMaquina.innerHTML = moldura + nome + opcoesDiv + opcoesTexto + "</div>";

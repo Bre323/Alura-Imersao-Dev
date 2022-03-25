@@ -73,7 +73,7 @@ h2 {
     position: absolute; 
 }
 
-#carta-maquina p {
+#carta-maquina .cartaMaquina-atributo {
     margin: 20px 20px;
 }
 
