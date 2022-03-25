@@ -425,7 +425,7 @@ let carta40 = {
     }
   };
 
-  
+
 let cartaMaquina;
 let cartaJogador;
 let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10,
@@ -435,99 +435,84 @@ let cartas = [carta1, carta2, carta3, carta4, carta5, carta6, carta7, carta8, ca
         
 
 function sortearCarta() {
-  var numeroCartaMaquina = parseInt(Math.random() * 40);
-  cartaMaquina = cartas[numeroCartaMaquina];
-  
-  var numeroCartaJogador = parseInt(Math.random() * 40);
+  let numeroCartaMaquina = parseInt(Math.random() * 40);
+  let numeroCartaJogador = parseInt(Math.random() * 40);
+
   while (numeroCartaJogador == numeroCartaMaquina) {
     numeroCartaJogador = parseInt(Math.random() * 40);
   }
+
+  cartaMaquina = cartas[numeroCartaMaquina];
   cartaJogador = cartas[numeroCartaJogador];
-  console.log(cartaJogador);
-  
-  //document.getElementById("btnSortear").disabled = true;
+  document.getElementById("btnSortear").disabled = true;
   document.getElementById("btnJogar").disabled = false;
   exibirCartaJogador();
 }
 
 
+function exibirCartaJogador() {
+  let divCartaJogador = document.getElementById("carta-jogador");
+  divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
+  let nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
+  let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">';
+  let opcoesDiv = "<div id='opcoes' class='carta-status'>";
+  let opcoesTexto = "";
 
-/*
-function obtemAtributoSelecionado() {
-  var radioAtributo = document.getElementsByName("atributo");
-  for (var i = 0; i < radioAtributo.length; i++) {
+  for (let atributo in cartaJogador.atributos) {
+    opcoesTexto += 
+      "<input type='radio' name='atributo' value='" + atributo + "'>"
+      + atributo + " " + cartaJogador.atributos[atributo] + "<br>";
+  }
+
+  divCartaJogador.innerHTML = moldura + nome + opcoesDiv +  opcoesTexto + "</div>";
+}
+
+
+function pegarAtributoSelecionado() {
+  let radioAtributo = document.getElementsByName("atributo");
+
+  for (let i = 0; i < radioAtributo.length; i++) {
     if (radioAtributo[i].checked) {
       return radioAtributo[i].value;
     }
   }
 }
-  
+
+
 function jogar() {
-  console.log("chamou");
-  var atributoSelecionado = obtemAtributoSelecionado();
-  var divResultado = document.getElementById("resultado");
-  
+  let atributoSelecionado = pegarAtributoSelecionado();
+  let divResultado = document.getElementById("resultado");
+
   if (cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]) {
-    htmlResultado = "<p class='resultado-final'>Venceu</p>";
-  } 
+    htmlResultado = `<p class="resultado-final">Vitória</p>`;  
+  }
   else if (cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]) {
-    htmlResultado = "<p class='resultado-final'>Perdeu</p>";
-  } 
+    htmlResultado = `<p class="resultado-final">Derrota</p>`;
+  }
   else {
-    htmlResultado = "<p class='resultado-final'>Empatou</p>";
+    htmlResultado = `<p class="resultado-final">Empate</p>`;
   }
   divResultado.innerHTML = htmlResultado;
-  
-  document.getElementById("btnJogar").disabled = true;
+
   document.getElementById("btnSortear").disabled = false;
+  document.getElementById("btnJogar").disabled = true;
   exibirCartaMaquina();
 }
-  
-function exibirCartaJogador() {
-  var divCartaJogador = document.getElementById("carta-jogador");
-  divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-  // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
-  var moldura =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
-  var tagHTML = "<div id='opcoes' class='carta-status'>";
-  
-  var opcoesTexto = "";
-  for (var atributo in cartaJogador.atributos) {
-    opcoesTexto +=
-      "<input type='radio' name='atributo' value='" +
-      atributo +
-      "'>" +
-      atributo +
-      " " +
-      cartaJogador.atributos[atributo] +
-      "<br>";
-  }
-  var nome = `<p class="carta-subtitle">${cartaJogador.nome}</p>`;
-  
-  divCartaJogador.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
-}
-  
+
+
 function exibirCartaMaquina() {
-  var divCartaMaquina = document.getElementById("carta-maquina");
+  let divCartaMaquina = document.getElementById("carta-maquina");
   divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
-  // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
-  var moldura =
-    '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
-  var tagHTML = "<div id='opcoes' class='carta-status'>";
-  
-  var opcoesTexto = "";
-  for (var atributo in cartaMaquina.atributos) {
-    opcoesTexto +=
-      "<p type='text' name='atributo' value='" +
-      atributo +
-      "'>" +
-      atributo +
-      " " +
-      cartaMaquina.atributos[atributo] +
-      "</p>";
+  let nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`
+  let moldura = '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png">';
+  let opcoesDiv = "<div id='opcoes' class='carta-status'>";
+  let opcoesTexto = "";
+
+  for (let atributo in cartaMaquina.atributos) {
+    opcoesTexto += 
+      "<input type='radio' name='atributo' value='" + atributo + "'>"
+      + atributo + " " + cartaJogador.atributos[atributo] + "<br>";
   }
-  var nome = `<p class="carta-subtitle">${cartaMaquina.nome}</p>`;
-  
-  divCartaMaquina.innerHTML = moldura + nome + tagHTML + opcoesTexto + "</div>";
+
+  divCartaMaquina.innerHTML = moldura + nome + opcoesDiv + opcoesTexto + "</div>";
 }
-*/
